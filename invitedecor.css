@@ -1,0 +1,301 @@
+html{
+  box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after{
+      box-sizing: inherit;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+   }
+
+header{
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url(image/484A2402.jpg);  
+  background-size: 100%;
+  background-position:20% 43%;
+  height: 600px;
+ 
+}
+
+body{
+  background-color:whitesmoke;
+}
+.title{
+
+ text-align: right; 
+padding-top: 100px;
+font-family: 'Open Sans Condensed', sans-serif;
+
+ color: white;
+ 
+ font-size: 50px;
+ font-weight: 50px;
+ padding-right: 100px;
+}
+.who{
+
+  font-size: 50px;
+  font-family: 'WindSong', cursive;
+  
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+color: white;
+  
+ 
+  font-size:20px;
+  padding-top: 50px;
+ text-align: center; 
+ font-size: 20px;
+ font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a{
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+}
+a:hover{
+
+  background-color:rgba(255, 255, 255, 0.2);
+  
+}
+
+.timer{
+  font-family:'WindSong', cursive;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(63, 108, 160);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.timer h1{
+  color: white;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.timer__items {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}
+.timer__item {
+  color: white;
+  background-color: rgb(159, 190, 247);
+  position: relative;
+  border-radius: 15%;
+  min-width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.timer__item::before {
+  
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -15px;
+}
+
+#when{
+  
+  font-family:'WindSong', cursive;
+background-image: url(image/12-Watercolor-Floral-Greenery-Wedding-Invitation-Templates.jpg);
+background-size: 110%;
+background-position: center;
+  color: white;
+}
+
+.whenimg{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto ;
+  width: 600px;
+  height: 550px;
+  background-image: url(image/blue\ circle.png);
+  background-size: 200%;
+  background-position: center ;
+}
+
+.whentxt{
+  padding-top: 120px;
+}
+.whenimg h2{
+font-size: 40px;
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+ 
+}
+
+.whenimg h1{
+  padding-top: 60px;
+  font-size: 60px;
+  color: rgb(255, 255, 255); 
+  border-bottom:solid rgb(63, 108, 160) 5px;
+}
+.whenimg h3{
+
+font-size:30px ;
+}
+
+.pallete{
+  font-family:'WindSong', cursive;
+  padding-top: 20px;
+  text-align: center;
+  width: 750px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.pallete h1{
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+  color: white;
+  background-color: rgb(63, 108, 160);
+  border-radius: 25px;
+  font-size: 40px;
+}
+
+.chosen{
+  transform: translate(-10px,-10px) scale(1.1);
+  transition: 0.5s;
+}
+
+.unchosen{
+  transform: none;
+}
+
+circle:hover{
+  transform: translate(-10px,-10px) scale(1.1);
+  transition-property: all;
+    transition: 0.5s;
+    
+  
+}
+
+#where{
+  
+  font-family:'WindSong', cursive;
+background-image: url(image/11-Watercolor-Floral-Greenery-Wedding-Invitation-Templates.jpg);
+background-size: 110%;
+background-position: center ;
+  color: white;
+}
+
+.whereimg{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto ;
+  width: 600px;
+  height: 550px;
+  background-image: url(image/blue\ circle.png);
+  background-size: 200%;
+  background-position: center ;
+}
+.wheretxt{
+  padding-top: 150px;
+}
+.whereimg h2{
+font-size: 30px;
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+ 
+}
+
+.whereimg h1{
+  padding-top: 60px;
+  font-size: 40px;
+  color: rgb(255, 255, 255); 
+  border-bottom:solid rgb(63, 108, 160) 5px;
+}
+
+.withyou{
+  width: 400px;
+  height: 175px;
+border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgb(63, 108, 160) ;
+  margin-bottom: 20px;
+}
+
+.list{
+  font-family:'WindSong', cursive;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.list h1{
+  text-align: center;
+}
+.list li{
+font-size: 30px;
+
+}
+
+#contacts{
+  font-family:'WindSong', cursive;
+  color: white;
+  background-color:rgb(63, 108, 160) ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#contacts div{
+margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+#contacts a{
+  padding: 10px;
+  background-color:rgb(159, 190, 247) ;
+  border-radius: 15px;
+}
+
+
+.nonactive2{
+opacity: 0;
+  transition: all 0.5s ease 0s;
+  transform: translate(120%,0px);
+
+}
+.nonactive3{
+  opacity: 0;
+    transition: all 0.5s ease 0s;
+    transform: translate(-120%,0px);
+  
+  }
+.active{
+  opacity: 1;
+  transform: translate(0px,0px);
+}
